@@ -1,0 +1,107 @@
+<html>
+<head>
+<title>MainActivity.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,0,255); }
+.s3 { color: rgb(128,128,128); font-style: italic; }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+MainActivity.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">com.learningforever.myapplication; 
+ 
+</span><span class="s0">import </span><span class="s1">android.graphics.Color; 
+</span><span class="s0">import </span><span class="s1">android.graphics.Point; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.app.AppCompatActivity; 
+</span><span class="s0">import </span><span class="s1">android.os.Bundle; 
+</span><span class="s0">import </span><span class="s1">android.view.View; 
+</span><span class="s0">import </span><span class="s1">android.widget.Toast; 
+ 
+</span><span class="s0">import </span><span class="s1">com.example.MyClass; 
+</span><span class="s0">import </span><span class="s1">com.learningforever.myapplication.LambdaExpression.Person; 
+</span><span class="s0">import </span><span class="s1">com.learningforever.myapplication.MathPackage.Circle; 
+</span><span class="s0">import </span><span class="s1">com.learningforever.myapplication.MathPackage.Employee; 
+ 
+</span><span class="s0">import </span><span class="s1">java.net.CookieHandler; 
+</span><span class="s0">import </span><span class="s1">java.net.CookieManager; 
+</span><span class="s0">import </span><span class="s1">java.net.CookiePolicy; 
+</span><span class="s0">import </span><span class="s1">java.net.HttpCookie; 
+</span><span class="s0">import </span><span class="s1">java.net.URL; 
+</span><span class="s0">import </span><span class="s1">java.util.ArrayList; 
+</span><span class="s0">import </span><span class="s1">java.util.List; 
+ 
+</span><span class="s0">public class </span><span class="s1">MainActivity </span><span class="s0">extends </span><span class="s1">AppCompatActivity { 
+ 
+    @Override 
+    </span><span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState); 
+ 
+        setContentView(R.layout.activity_main); 
+    MyClass myClass=</span><span class="s0">new </span><span class="s1">MyClass(); 
+ 
+ 
+    } 
+    </span><span class="s0">public void </span><span class="s1">thayDoiKieuPrimative(Integer i) 
+    { 
+        i++; 
+    } 
+    </span><span class="s0">public void </span><span class="s1">ThayDoi(Circle circle) 
+    { 
+        circle.setR(</span><span class="s2">500</span><span class="s1">); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">PressButton(View view) </span><span class="s0">throws </span><span class="s1">CloneNotSupportedException 
+    { 
+        </span><span class="s0">try </span><span class="s1">{ 
+ 
+           </span><span class="s0">int </span><span class="s1">a; 
+            a=</span><span class="s2">100</span><span class="s1">; 
+            </span><span class="s0">int </span><span class="s1">b=</span><span class="s2">50</span><span class="s1">; 
+            b=</span><span class="s2">100</span><span class="s1">; 
+            tricky();tricky2(); 
+            </span><span class="s0">int </span><span class="s1">c=</span><span class="s2">500</span><span class="s1">; 
+            c=</span><span class="s2">800</span><span class="s1">; 
+          </span><span class="s3">//  view.setBackgroundColor(Color.BLACK);</span><span class="s1"> 
+            c=</span><span class="s2">500</span><span class="s1">; 
+            c=</span><span class="s2">800</span><span class="s1">; 
+ 
+        } 
+        </span><span class="s0">catch </span><span class="s1">(Exception ex) 
+        { 
+            </span><span class="s0">int </span><span class="s1">abcd=</span><span class="s2">100</span><span class="s1">; 
+        } 
+    } 
+    </span><span class="s0">public void </span><span class="s1">tricky() 
+    { 
+       </span><span class="s0">int </span><span class="s1">abcd=</span><span class="s2">50</span><span class="s1">; 
+        </span><span class="s0">int </span><span class="s1">mmm=</span><span class="s2">800</span><span class="s1">; 
+        mmm=</span><span class="s2">800</span><span class="s1">; 
+        mmm=</span><span class="s2">800</span><span class="s1">; 
+        tricky2(); 
+        mmm=</span><span class="s2">444</span><span class="s1">; 
+        mmm=</span><span class="s2">800</span><span class="s1">; 
+ 
+    } 
+    </span><span class="s0">public void </span><span class="s1">tricky2() 
+    { 
+        </span><span class="s0">int </span><span class="s1">abcd=</span><span class="s2">50</span><span class="s1">; 
+        </span><span class="s0">int </span><span class="s1">mmm=</span><span class="s2">800</span><span class="s1">; 
+        mmm=</span><span class="s2">800</span><span class="s1">; 
+        mmm=</span><span class="s2">800</span><span class="s1">; 
+        mmm=</span><span class="s2">444</span><span class="s1">; 
+        mmm=</span><span class="s2">800</span><span class="s1">; 
+ 
+    } 
+} 
+</span></pre>
+</body>
+</html>
