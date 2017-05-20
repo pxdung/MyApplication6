@@ -14,4 +14,15 @@ public class MyBean {
     public void setData(String data) {
         myData = data;
     }
+
+
+    public void Abcd()
+    {
+
+    }
+    public void Abcd2()
+    {
+
+    }
+
 }
