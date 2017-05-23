@@ -23,6 +23,7 @@ public class MyBean {
     public void Abcd2()
     {
         //xin chao nhe
+        ///
 
     }
 
