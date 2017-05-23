@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         tricky2();
         mmm=444;
         mmm=800;
+        //xin chao nhe
 
     }
     public void tricky2()
